@@ -1,5 +1,5 @@
 //
-const correctAnswers = {
+const correctAnswers: { [key: string]: string } = {
   "1": "C",
   "2": "B",
   "3": "D",
@@ -202,7 +202,7 @@ const correctAnswers = {
   "200": "B",
 }
 
-export const listAnswerKeys = Object.keys(correctAnswers).map((key) => ({
+export const listAnswerKeys = Object.keys(correctAnswers).map((key: string) => ({
   questionNumber: key,
   correctAnswer: correctAnswers[key],
 }))
